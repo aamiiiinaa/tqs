@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <>
       <div
-        className="bg-cover bg-center mt-20 mb-10 min-w-screen h-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10"
+        className="bg-cover bg-center mt-5 mb-10 min-w-screen h-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10"
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-20 md:mt-10 p-14 rounded">

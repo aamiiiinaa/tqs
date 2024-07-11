@@ -10,6 +10,7 @@ import Gallery from "../components/Gallery";
 import FeedbackForm from "../components/FeedbackForm";
 
 
+
 function Home() {
   return (
     <>
@@ -29,12 +30,12 @@ function Home() {
       <section id="gallery">
         <Gallery />
       </section>
-      < FeedbackForm />
+   
       <section id="testimonial">
         <Testimonial />
       </section>
   
-    
+      <FeedbackForm />
       <section id="contact">
         <Contact />
       </section>

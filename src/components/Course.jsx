@@ -8,7 +8,7 @@ const Course = () => {
     {
       id: 1,
       name: "Quran Nazra",
-      title: "For Adults - age 18 & above",
+      title: "Adults- Age 18 & above",
       image: "https://img.freepik.com/free-psd/quran-book-isolated_23-2151371150.jpg?t=st=1719919868~exp=1719923468~hmac=98e8ed4fe36f04093abcfd0b6bf23b64fd5c56e6b85852115c745c218e6ba410&w=900"
     },
     {

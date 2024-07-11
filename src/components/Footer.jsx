@@ -17,7 +17,7 @@ function Footer() {
             <a href="https://www.instagram.com/the.quran.class_?igsh=MTkwdXQ2eXI4MjEycQ==" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-            <a href="https://www.facebook.com/thequranclass" target="_blank" rel="noopener noreferrer">
+            <a target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
             <a href="https://x.com/TheQuranClass?t=HD3tdGbWRxka7dA-OhQgmg&s=08" target="_blank" rel="noopener noreferrer">

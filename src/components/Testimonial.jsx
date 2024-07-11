@@ -1,27 +1,32 @@
 import React from 'react';
+import av1 from "../../public/av3.jpg";
+import av2 from "../../public/av7.png";
+import av3 from "../../public/av2.jpg";
+import av4 from "../../public/av5.jpg";
+
 
 function Testimonial() {
   const testimonials = [
     {
-      image: 'https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg',
+      image: av1,
       review: 'Jazakallah for the immense support. You are the only person so far who realised she had problems in letters with nuktha and without nuktha. I was really happy you addressed it.',
       rating: 5,
-      name: 'Aara Aasif'
+      name: 'Aafiya'
     },
     {
-      image: 'https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg',
+      image: av2,
       review: 'Alhamdulillah Ahyan was very happy. Your class is very interesting and explain method is very good. Keep it up.',
       rating: 4,
-      name: 'Areeb Masdi'
+      name: 'Ahyan Jazeel'
     },
     {
-      image: 'https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg',
+      image:  av3,
       review: 'We are so satisfied with your teaching alhamdulillah. She loves being taught by you. May Allah reward you',
       rating: 5,
-      name: 'Ihsan Khan'
+      name: 'Azka Abu'
     },
     {
-      image: 'https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg',
+      image: av4,
       review: 'The classes are very well structured and the instructors are great.',
       rating: 4,
       name: 'Yusuf Rizwan '
