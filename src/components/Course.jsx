@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Course = () => {
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  useEffect(() => {
+    const element = document.documentElement;
+    if (theme === "dark") {
+      element.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      element.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [theme]);
+
   const book = [
     {
       id: 1,
@@ -19,7 +32,7 @@ const Course = () => {
     },
     {
       id: 3,
-      name: "Salah Course",
+      name: "Salah",
       title: "Age 7 and above",
       image: "https://img.freepik.com/premium-vector/vector-muslim-guy-praying_995281-4908.jpg?w=740"
     },
@@ -47,6 +60,28 @@ const Course = () => {
     window.location.href = 'https://forms.gle/h7sEafJKkRaE946c9';
   };
 
+  const NextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", color: theme === "dark" ? "white" : "black", right: '5px', zIndex: 1 }}
+        onClick={onClick}
+      />
+    );
+  };
+
+  const PrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", color: theme === "dark" ? "white" : "black", left: '5px', zIndex: 1 }}
+        onClick={onClick}
+      />
+    );
+  };
+
   var settings = {
     dots: true,
     infinite: false,
@@ -54,6 +89,8 @@ const Course = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,

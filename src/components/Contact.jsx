@@ -33,7 +33,6 @@ export const Contact = () => {
         </h1>
         <div className="py-6">
           <p className="block"><strong>Phone Number:</strong> (+94) 72-510-6723</p>
-          <p className="block"><strong>Address:</strong> 5th Lane, Dehiwala, Sri Lanka</p>
           <p className="block"><strong>Email:</strong> thequranclasss@gmail.com</p>
           <p className="block mt-4"><strong>Connect with us:</strong></p>
           <div className="flex mt-2">
